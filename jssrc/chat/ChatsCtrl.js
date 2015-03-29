@@ -1,11 +1,12 @@
-import {Chats} from '../chat/Chats';
-
 export class ChatsCtrl {
-    constructor() {
-        this.chats = Chats.all();
+    constructor($scope, Chats) {
+        this.$inject = ['$scope', 'Chats'];
+
+        this.service = Chats;
+        $scope.chats = this.service.all();
     }
 
     remove(chat) {
-        Chats.remove(chat);
+        this.service.remove(chat);
     }
 }

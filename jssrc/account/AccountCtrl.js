@@ -1,6 +1,8 @@
 export class AccountCtrl {
-    constructor() {
-        this.settings = {
+    constructor($scope) {
+        this.$inject = ['$scope'];
+
+        $scope.settings = {
             enableFriends: true
         };
     }

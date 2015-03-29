@@ -4,7 +4,7 @@ import {onReady} from 'bootstrap';
 import {router} from 'router';
 import {Chats} from 'chat/Chats';
 import {DashCtrl} from 'dashboard/DashCtrl';
-import {ChatCtrl} from 'chat/ChatsCtrl';
+import {ChatsCtrl} from 'chat/ChatsCtrl';
 import {ChatDetailCtrl} from 'chat/ChatDetailCtrl';
 import {AccountCtrl} from 'account/AccountCtrl';
 

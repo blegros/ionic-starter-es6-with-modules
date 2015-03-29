@@ -20,7 +20,8 @@ gulp.task('scripts', function () {
     return gulp.src(paths.scripts)
         .pipe(sourcemaps.init())
         .pipe(babel({
-            modules: 'ignore'
+            modules: 'amd',
+            moduleIds: true
         }))
         .pipe(concat('all.js'))
         .pipe(sourcemaps.write('.'))
